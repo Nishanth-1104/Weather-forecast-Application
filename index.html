@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="icon" href="icon/weather_icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="container">
+        <div id="search-group">
+            <input
+                type="text"
+                placeholder="Search weather"
+                spellcheck="false"
+                id="searchbox"
+            >
+            <button type="button">Search</button>
+        </div>
+
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+
+        <div class="weather-img">
+            <img src="images/clouds.png" alt="Weather Icon">
+            <h1 id="temp">22°C</h1>
+            <h2 id="city">India</h2>
+        </div>
+
+        <div class="weather-text">
+            <div id="humidity">
+                <img src="images/humidity.png" alt="Humidity">
+                <div>
+                    <p id="hu">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+
+            <div id="wind">
+                <img src="images/wind.png" alt="Wind">
+                <div>
+                    <p id="speed">50 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
